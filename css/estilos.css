@@ -1,0 +1,59 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1{
+    color:white;
+    text-align: center;
+}
+
+.nav{
+    background-color: rgb(161, 161, 161);
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top:20px;
+}
+
+.footer{
+    
+    background-color: black;
+    color: white;
+}
+
+.centrado{
+    text-align: center;
+}
+
+a{
+    background-color: gray;
+}
+
+.SoloCorreo{
+    background-color: white;
+}
+
+.study{
+    text-decoration: underline;
+}
+
+p{
+    font-weight: bold;
+    color: #fff;
+}
