@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: Ubuntu;
+}
+
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenido {
+	width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+}
+
+.contenedor {
+	margin: 10px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 75% 25%;
+
+	grid-template-areas: "contenido widget-1";
+	justify-content: center;
+	padding: 20px;
+}
+
+.contenedor.single-column {
+	grid-template-columns: 100%;
+	grid-template-areas: "contenido";
+}
+
+.contenedor.two-columns {
+	grid-template-columns: 50% 50%;
+	grid-template-areas: "contenido";
+}
+
+.contenedor .contenido-principal {
+	grid-area: contenido;
+}
+
+/* .contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: #fAA43D;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+} */
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+	color: #fff;
+	height: 400px;
+	
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+    background-image: url(../img/photoAsadoAlto.png);
+    background-size: cover;
+    border: 2px solid #DDD;
+    border-radius: 4px;
+    margin-top: 130px;
+}
+
+.contenedor .widget-1:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+
+.contenedor .footer {
+	background-color: black;
+    color: white;
+	grid-area: footer;
+    text-align: center;
+    /*margin:10px;*/
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: normal;
+}
+
+.contenedor .footer p{
+	margin-top:10px;
+	font-size: 12px;
+}
+
+
+.contnav{
+	/* background-color: rgb(161, 161, 161); */
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+.nav{
+    /* background-color: rgb(161, 161, 161); */
+    color: white;
+    border-radius: 5px;
+    margin: 5px 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.asado{
+    /* background-color: rgb(161, 161, 161); */
+    color: black;
+    border-radius: 5px;
+    margin: 5px 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-decoration: none;
+	border: solid 1px;
+}
+
+.asadoNosotros{
+    /* background-color: rgb(161, 161, 161); */
+    color: black;
+    border-radius: 5px;
+    margin: 5px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+}
+
+a:hover{
+    background-color: #111;
+	color: #b5b7b9;
+  }
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-columns: auto;
+		grid-template-areas: "contenido"
+							"widget-1"
+	}
+
+	.contenedor.two-columns {
+		grid-template-columns: auto;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+	.contenedor.two-columns {
+		grid-template-columns: auto;
+		grid-template-areas: none;
+	}
+
+}
+

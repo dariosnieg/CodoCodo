@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/536c4e542f.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/grid-responsive.css">
     <LINK rel=StyleSheet href="./css/estilos.css" type="text/css" media=screen>
     <link rel="shortcut icon" href="./img/parrilla.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <script src="https://kit.fontawesome.com/536c4e542f.js" crossorigin="anonymous"></script>
     <title>La Parrilla de Dario</title>
-
 </head>
+
 <body>
-    <header>
-        <br>
+    <header class="header">
         <h1>La parrilla de Dario</h1>
+
         <nav>
-            <a href="index.html" class="nav">Home</a>
-            <a href="nosotros.html" class="nav">Nosotros</a>
-            <a href="contacto.html" class="nav">Contacto</a>
-            <a href="registro.html" class="nav">Registro</a>
-            <a href="sucursales.html" class="nav">Sucursales</a>
-        <nav>
+            <ul>
+                <li><a href="index.html" class="nav">Home</a></li>
+                <li><a href="nosotros.html" class="nav">Nosotros</a></li>
+                <li><a href="registro.html" class="nav">Registro</a></li>
+                <li> <a href="sucursales.html" class="nav">Sucursales</a></li>
+            </ul>
+        </nav>
     </header>
-    <menu>
-        <h2>Nosotros</h2>
-        <img src="img/parrilla.jpg" style="text-align: center;" width="500">
-        <p>El asado, barbacoa, parrilla o parrillada es una técnica de cocción mediante la cual, los alimentos (generalmente cortes de carne) son expuestos al calor de fuego o brasas para que se cocinen lentamente. El calor se transmite gradualmente al alimento, que por lo general está suspendido sobre el fuego o cerca de las brasas. El fuego se logra a partir de carbón vegetal o de madera, aunque hay también parrillas de gas. Las maderas más usadas son maderas duras como las de roble, mezquite, quebracho o coronilla, guindo, que arden a temperaturas altas y por un tiempo prolongado. Si bien la carne más empleada es la carne vacuna, también se asa carne de cerdo, de cordero, cabrito, pescado, pollo, langostinos y diversos embutidos.</p>
-    </menu>
-    <footer>
-        <a class="footer" href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
-        <a class="footer" href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter-square"></i></a>
-        <a class="footer" href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-        <a class="footer" href="https://www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <p>Derechos Reservados</p>
+
+    <main class="contenido">
+        <div class="contenedor single-column">
+            <h2>El Asado!</h2>
+            <p class="asadoNosotros">
+
+                El asado, barbacoa, parrilla o parrillada es una técnica de cocción mediante la cual, los alimentos
+                (generalmente cortes de carne) son expuestos al calor de fuego o brasas para que se cocinen lentamente.
+                El calor se transmite gradualmente al alimento, que por lo general está suspendido sobre el fuego o
+                cerca de las brasas. El fuego se logra a partir de carbón vegetal o de madera, aunque hay también
+                parrillas de gas. Las maderas más usadas son maderas duras como las de roble, mezquite, quebracho o
+                coronilla, guindo, que arden a temperaturas altas y por un tiempo prolongado. Si bien la carne más
+                empleada es la carne vacuna, también se asa carne de cerdo, de cordero, cabrito, pescado, pollo,
+                langostinos y diversos embutidos.
+                <br><br>
+                Los tradicionales habitantes del campo, los gauchos, son especialistas en la elaboración del "asado a la
+                cruz", "asado al asador" o "asado a la estaca", esto es, las porciones de carne colgadas en un asador de
+                hierro que se clava en la tierra alrededor de un fogón de leña. Un asado correctamente preparado
+                requiere varias horas de fuego y trabajo. El modo de comerlo aceptado en estas regiones es "al pan", en
+                el que solo se utiliza el pan para tomar la carne y un facón para cortarla. También se come "al plato"
+                con cuchillo y tenedor.
+            </p><img class="text-image" src="img/parrilla.jpg">
+            <p class="asadoNosotros">
+                Los cortes más comunes son la costilla ("tira de asado") y el vacío. En las ciudades, la forma de
+                preparación es menos rústica. Es muy común el uso del carbón vegetal para generar un rápido fuego en la
+                zona este de la Argentina. Los asadores más reconocidos se oponen a las parrillas con tapa por
+                considerar que alteran el normal proceso de cocción.
+                <br><br>
+                También es típico el "cordero a la estaca" o "cordero a la cruz" (un cordero entero clavado en un
+                armazón de hierro en forma de "I", a la que se le suele llamar "cruz"), tradicional de la región de la
+                Patagonia, el lechón y el asado con cuero (una vaca entera, a la que no se le ha quitado el cuero). En
+                regiones costeras, sobre todo en Tierra del Fuego, se suele hacer pescados y mariscos a la parrilla.
+                <br><br>
+                También en la región patagónica se utiliza el llamado chulengo, que es un tambor de combustible de 200
+                litros cortado al medio en forma longitudinal, al que se le adosan bisagras y una parrilla en su
+                interior.
+
+            </p>
+
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="footerico" href="https://www.facebook.com" target="_blank"> <i
+                class="fa-brands fa-facebook-f"></i></a>
+        <a class="footerico" href="https://www.twitter.com" target="_blank"> <i
+                class="fa-brands fa-twitter-square"></i></a>
+        <a class="footerico" href="https://www.instagram.com" target="_blank"> <i
+                class="fa-brands fa-instagram"></i></a>
+        <a class="footerico" href="https://www.linkedin.com" target="_blank"> <i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <p>Todos los derechos reservados 2022 ®</p>
     </footer>
 </body>
+
 </html>

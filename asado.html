@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,77 @@
     <script src="https://kit.fontawesome.com/536c4e542f.js" crossorigin="anonymous"></script>
     <LINK rel=StyleSheet href="./css/estilos.css" type="text/css" media=screen>
     <link rel="shortcut icon" href="./img/parrilla.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/grid-responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <title>La Parrilla de Dario</title>
 </head>
+
 <body>
-    <header>
-        <br>
+    <header class="header">
         <h1>La parrilla de Dario</h1>
+
         <nav>
-            <a href="index.html" class="nav">Home</a>
-            <a href="nosotros.html" class="nav">Nosotros</a>
-            <a href="contacto.html" class="nav">Contacto</a>
-            <a href="registro.html" class="nav">Registro</a>
-            <a href="sucursales.html" class="nav">Sucursales</a>
-        <nav>
+            <ul>
+                <li><a href="index.html" class="nav">Home</a></li>
+                <li><a href="nosotros.html" class="nav">Nosotros</a></li>
+                <li><a href="registro.html" class="nav">Registro</a></li>
+                <li> <a href="sucursales.html" class="nav">Sucursales</a></li>
+            </ul>
+        </nav>
     </header>
-    <menu>
-        <h2>Que ponemos en la parrilla?</h2>
-        <img src="img/Asado.jpg" alt="Alto asado!">
-        <br><br>
-        
-        <table>
-            <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-            </tr>
-            <tr>
-                <td>Asado</td>
-                <td>2 Kgs</td>
-            </tr>
-            <tr>
-                <td>Vacio</td>
-                <td>1 Kgs</td>
-            </tr>
-            <tr>
-                <td>Entraña</td>
-                <td>1 Kgs</td>
-            </tr>
-            <tr>
-                <td>Chinchulines</td>
-                <td>0.5 Kgs</td>
-            </tr>
-            <tr>
-                <td>Mollejas</td>
-                <td>0.5 Kgs</td>
-            </tr>
-        </table>
-        <h3>A tener en cuenta!</h3>
-        <ul>
-            <li>Prender el fuego y calentar bien la parrilla</li>
-            <li>No apurarlo, poner la parrilla en altura media, colocando la mano debe quemar a los 5 Segundos</li>
-            <li>Si te gusta condimentar, tirar unos dientes de ajo directo al fuego, debajo de la carne</li>
-            <li>antes de cortar, dejar reposar la carne unos minutos fuera del fuego</li>
-        </ul>
-    </menu>
-    <footer>
-        <a class="footer" href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
-        <a class="footer" href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter-square"></i></a>
-        <a class="footer" href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-        <a class="footer" href="https://www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <p>Derechos Reservados</p>
+
+    <main class="contenido">
+        <div class="contenedor single-column">
+            <h2>Que ponemos en la parrilla?</h2>
+            <img class="imgAsado" src="img/Asado.jpg" alt="Alto asado!">
+            
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>Asado</td>
+                    <td>2 Kgs</td>
+                </tr>
+                <tr>
+                    <td>Vacio</td>
+                    <td>1 Kgs</td>
+                </tr>
+                <tr>
+                    <td>Entraña</td>
+                    <td>1 Kgs</td>
+                </tr>
+                <tr>
+                    <td>Chinchulines</td>
+                    <td>0.5 Kgs</td>
+                </tr>
+                <tr>
+                    <td>Mollejas</td>
+                    <td>0.5 Kgs</td>
+                </tr>
+            </table>
+            <h2>A tener en cuenta!</h2>
+            <ul>
+                <li>Prender el fuego y calentar bien la parrilla</li>
+                <li>No apurarlo, poner la parrilla en altura media, colocando la mano debe quemar a los 5 Segundos</li>
+                <li>Si te gusta condimentar, tirar unos dientes de ajo directo al fuego, debajo de la carne</li>
+                <li>antes de cortar, dejar reposar la carne unos minutos fuera del fuego</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a class="footerico" href="https://www.facebook.com" target="_blank"> <i
+                class="fa-brands fa-facebook-f"></i></a>
+        <a class="footerico" href="https://www.twitter.com" target="_blank"> <i
+                class="fa-brands fa-twitter-square"></i></a>
+        <a class="footerico" href="https://www.instagram.com" target="_blank"> <i
+                class="fa-brands fa-instagram"></i></a>
+        <a class="footerico" href="https://www.linkedin.com" target="_blank"> <i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <p>Todos los derechos reservados 2022 ®</p>
     </footer>
 </body>
+
 </html>

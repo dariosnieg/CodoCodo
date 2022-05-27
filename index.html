@@ -1,38 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/536c4e542f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/grid-responsive.css">
     <LINK rel=StyleSheet href="./css/estilos.css" type="text/css" media=screen>
     <link rel="shortcut icon" href="./img/parrilla.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <title>La Parrilla de Dario</title>
 </head>
+
 <body>
-    <header>
-        <br>
+    <header class="header">
         <h1>La parrilla de Dario</h1>
+
         <nav>
-            <a href="index.html" class="nav">Home</a>
-            <a href="nosotros.html" class="nav">Nosotros</a>
-            <a href="contacto.html" class="nav">Contacto</a>
-            <a href="registro.html" class="nav">Registro</a>
-            <a href="sucursales.html" class="nav">Sucursales</a>
-        <nav>
+            <ul>
+                <li><a href="index.html" class="nav">Home</a></li>
+                <li><a href="nosotros.html" class="nav">Nosotros</a></li>
+                <li><a href="registro.html" class="nav">Registro</a></li>
+                <li> <a href="sucursales.html" class="nav">Sucursales</a></li>
+            </ul>
+        </nav>
     </header>
-    <menu>
-        <h2>Nuestra especialidad</h2>
-        <img src="img/Asado.jpg" alt="Alto asado!">
-        <br><br>
-        <a class="nav" href="asado.html">Que cocinamos?</a>
-    </menu>
-    <footer>
-        <a class="footer" href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
-        <a class="footer" href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter-square"></i></a>
-        <a class="footer" href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-        <a class="footer" href="https://www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <p>Derechos Reservados</p>
+    <div class="carousel">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="./img/Tipos-de-asados1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./img/Tipos-de-asados2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./img/Tipos-de-asados3.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <main class="contenido">
+        <div class="contenedor">
+            <!-- Slideshow container -->
+            <div class="contenido-principal">
+                <h2>Nuestra parrilla</h2>
+                
+                <p class="pinicio">
+                    No se trata de una parrilla más, la intención es que aquellos que vayan, argentinos y turistas, puedan vivir una experiencia única. 
+                    
+
+                    <h4>"Los porteños se identifican, los extranjeros se sorprenden"</h4></p>
+                    <img class="imgIndex" src="./img/asadoCostilla.jpg" alt="Alto asado!">    
+                    <p class="pinicio">
+                    En nuestro establecimiento seleccionamos los mejores cortes de las razas Hereford y
+                    Aberdeen Angus.<br><br>
+                    Al momento de apreciar un rico corte de carne lo ideal es comerlo jugoso y para eso debe respetarse
+                    una regla de oro: los comensales deben esperar a la carne y no al revés.</p>
+                
+                
+
+                <div class="divasado"><a class="asado" href="asado.html">Conocé nuestro Menu</a></div>
+            </div>
+
+
+
+            <div class="widget-1">
+                <!-- img class="imgWidget" src="img/photoAsadoAlto.png"-->
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="footerico" href="https://www.facebook.com" target="_blank"> <i
+                class="fa-brands fa-facebook-f"></i></a>
+        <a class="footerico" href="https://www.twitter.com" target="_blank"> <i
+                class="fa-brands fa-twitter-square"></i></a>
+        <a class="footerico" href="https://www.instagram.com" target="_blank"> <i
+                class="fa-brands fa-instagram"></i></a>
+        <a class="footerico" href="https://www.linkedin.com" target="_blank"> <i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <p>Todos los derechos reservados 2022 ®</p>
     </footer>
+    <script src="./js/carousel.js"></script>
 </body>
+
 </html>
